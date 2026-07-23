@@ -1,63 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Book a Flight - Royal Air</title>
+<title>Royal Air - Search Flights</title>
+
 <style>
 body{
+margin:0;
 font-family:Arial,sans-serif;
 background:#0b1d3a;
 color:white;
+}
+
+.header{
+background:linear-gradient(90deg,#08162f,#0b2c5f);
+padding:25px;
+text-align:center;
+}
+
+.header h1{
+color:gold;
+font-size:48px;
+margin:0;
+}
+
+.header p{
+font-size:20px;
+}
+
+.box{
+background:white;
+color:black;
+width:90%;
+max-width:700px;
+margin:40px auto;
+padding:30px;
+border-radius:18px;
+}
+
+input,select{
+width:100%;
+padding:14px;
+margin:10px 0;
+font-size:18px;
+border-radius:10px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:16px;
+background:gold;
+border:none;
+font-size:22px;
+border-radius:12px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+background:#ffd700;
+}
+
+footer{
 text-align:center;
 padding:30px;
-}
-input,select{
-padding:10px;
-margin:10px;
-width:250px;
-font-size:18px;
-}
-button{
-background:gold;
-color:black;
-border:none;
-padding:15px 30px;
-font-size:20px;
-border-radius:10px;
-cursor:pointer;
+color:#ddd;
 }
 </style>
+
 </head>
 
 <body>
 
-<h1>Book Your Flight</h1>
+<div class="header">
+<h1>ROYAL AIR</h1>
+<p>Fly Beyond Luxury</p>
+</div>
 
-<p>Your Name</p>
-<input type="text" placeholder="Enter your name">
+<div class="box">
 
-<p>Choose Your Seat</p>
+<h2>Search Flights</h2>
+
 <select>
-<option>1A</option>
-<option>1B</option>
-<option>2A</option>
-<option>2B</option>
-<option>3A</option>
-<option>3B</option>
+<option>From - Cairo (CAI)</option>
+<option>From - Paris (CDG)</option>
+<option>From - London (LHR)</option>
+<option>From - Dubai (DXB)</option>
 </select>
 
-<p>Choose Your Meal</p>
 <select>
-<option>Chicken</option>
-<option>Beef</option>
-<option>Pasta</option>
-<option>Vegetarian</option>
+<option>To - Paris (CDG)</option>
+<option>To - London (LHR)</option>
+<option>To - Dubai (DXB)</option>
+<option>To - Cairo (CAI)</option>
 </select>
 
-<br><br>
+<input type="date">
 
-<button onclick="alert('Booking received!')">
-Confirm Booking
-</button>
+<select>
+<option>1 Passenger</option>
+<option>2 Passengers</option>
+<option>3 Passengers</option>
+<option>4 Passengers</option>
+</select>
+
+<select>
+<option>Economy Class</option>
+<option>Business Class</option>
+<option>First Class</option>
+</select>
+
+<button>Search Flights</button>
+
+</div>
+
+<footer>
+© Royal Air
+</footer>
 
 </body>
 </html>
