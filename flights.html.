@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Royal Air - Choose Flight</title>
+</head>
+<body>
+
+<h1>✈️ Available Royal Air Flights</h1>
+
+<hr>
+
+<h2>RA101</h2>
+<p>Cairo (CAI) ➜ Paris (CDG)</p>
+<p>Departure: 09:00</p>
+<p>Arrival: 12:30</p>
+<button>Select Flight</button>
+
+<hr>
+
+<h2>RA205</h2>
+<p>Cairo (CAI) ➜ London (LHR)</p>
+<p>Departure: 14:00</p>
+<p>Arrival: 18:30</p>
+<button>Select Flight</button>
+
+<hr>
+
+<h2>RA310</h2>
+<p>Cairo (CAI) ➜ Dubai (DXB)</p>
+<p>Departure: 18:45</p>
+<p>Arrival: 22:10</p>
+<button>Select Flight</button>
+
+</body>
+</html>
