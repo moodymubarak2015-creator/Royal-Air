@@ -61,7 +61,12 @@ button{
 
 <p><strong>Flight:</strong> Cairo → Paris</p>
 <p><strong>Seat:</strong> 12A</p>
-<p><strong>Meal:</strong> Grilled Chicken</p>
+<p><strong>Meal:</strong> <span id="meal"></span></p>
+
+<script>
+document.getElementById("meal").textContent =
+localStorage.getItem("meal") || "No meal selected";
+</script>
 
 <button onclick="window.location.href='confirmation.html'">
 Confirm Booking
