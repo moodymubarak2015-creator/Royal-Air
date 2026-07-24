@@ -11,7 +11,7 @@
 
 <p>Please select your seat:</p>
 
-<button>1A</button>
+<button onclick="localStorage.setItem('seat', randomSeat()); window.location.href='meals.html'">1A</button>
 <button>1B</button>
 <button>1C</button>
 <button>1D</button>
@@ -23,7 +23,13 @@
 <button>2C</button>
 <button>2D</button>
 
-<br><br>
+<script>
+function randomSeat() {
+  const rows = Math.floor(Math.random() * 30) + 1;
+  const letters = ["A","B","C","D","E","F"];
+  return rows + letters[Math.floor(Math.random() * letters.length)];
+}
+</script>br><br>
 
 <button>3A</button>
 <button>3B</button>
